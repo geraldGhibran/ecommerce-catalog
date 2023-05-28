@@ -1,7 +1,5 @@
 <template>
-  <div class="product_display">
-
-  </div>
+  <div class="product_display"></div>
 </template>
 
 <script>
@@ -10,4 +8,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+@import url('../assets/style/page.css');
+</style>

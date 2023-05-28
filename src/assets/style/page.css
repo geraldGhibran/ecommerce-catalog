@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+  --biruGelap: #002772;
+  --unguPucat: #fde2ff;
+  --hitam: #1e1e1e;
+  --unguGelap: #720060;
+  --biruCerah: #d6e6ff;
+  --abuabuGelap: #3f3f3f;
+  --abuAbu: #dcdcdc;
+  --putih: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+}
+
+.product_display {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #d6e6ff 50%, #ffffff 30%);
 }
