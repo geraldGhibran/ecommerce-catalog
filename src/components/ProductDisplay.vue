@@ -1,5 +1,8 @@
 <template>
   <div class="product_display">
+    <div v-if="isLoading">
+      <Loader />
+    </div>
     <div class="product_card">
       <div
         class="product_card-avaible"
@@ -83,14 +86,20 @@
 </template>
 
 <script>
+import Loader from '../components/Loader.vue'
+
 export default {
   name: 'ProductDisplayComponent',
+  components: {
+    Loader
+  },
 
   data() {
     return {
       index: 0,
       product: {},
       maxRates: [1, 2, 3, 4, 5],
+      isLoading: false,
       isProductAvailable: false
     }
   },
@@ -111,6 +120,8 @@ export default {
     },
 
     async singleProduct() {
+      this.isLoading = true
+
       if (this.index <= 20) {
         this.index++
       } else {
@@ -124,6 +135,8 @@ export default {
       } else {
         this.isProductAvailable = false
       }
+
+      this.isLoading = false
     }
   },
 
