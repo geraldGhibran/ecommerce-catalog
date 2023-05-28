@@ -5,12 +5,21 @@
         class="product_card-avaible"
         :class="isProductAvailable ? 'display-none' : 'product_card-avaible'"
       >
+        <!-- Right -->
         <div class="product_card-right">
           <img :src="product?.data?.image" class="product_img" />
         </div>
 
+        <!-- Left -->
         <div class="product_card-left">
-          <h1>{{ product?.data?.title }}</h1>
+          <h1
+            class="product_title"
+            :class="
+              product?.data?.category === 'men\'s clothing' ? 'color-darkBlue' : 'color-darkPurple'
+            "
+          >
+            {{ product?.data?.title }}
+          </h1>
         </div>
       </div>
     </div>
@@ -68,6 +77,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 @import url('../assets/style/page.css');
 </style>
