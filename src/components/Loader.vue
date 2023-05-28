@@ -29,9 +29,9 @@ export default {
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
-  bottom: 50%;
+  bottom: 45%;
   position: absolute;
-  left: 50%;
+  left: 45%;
 }
 
 @keyframes spin {
