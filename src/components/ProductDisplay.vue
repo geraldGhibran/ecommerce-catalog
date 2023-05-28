@@ -1,6 +1,6 @@
 <template>
   <div class="product_display">
-    <div v-if="isLoading">
+    <div>
       <Loader />
     </div>
     <div class="product_card">

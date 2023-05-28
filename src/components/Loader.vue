@@ -1,7 +1,7 @@
 <template>
-  <main>
+  <div class="loader-container">
     <div class="loader"></div>
-  </main>
+  </div>
 </template>
 
 <script>
@@ -11,35 +11,27 @@ export default {
 </script>
 
 <style>
-main {
+.loader-container {
   width: 100%;
-  height: 0%;
-  background-color: black;
-}
-
-.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
+  height: 100vh;
+  background-color: gray;
+  opacity: 0.7;
   position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
 }
 
-/* Safari */
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
+.loader {
+  border: 16px solid #f3f3f3; /* Warna loader */
+  border-top: 16px solid #3498db; /* Warna loader */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  bottom: 50%;
+  position: absolute;
+  left: 50%;
 }
 
 @keyframes spin {
