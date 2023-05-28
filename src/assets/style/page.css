@@ -26,6 +26,18 @@
   color: var(--darkPurple);
 }
 
+.border-darkBlue {
+  background-color: var(--white);
+  color: var(--darkBlue);
+  border: 3px solid var(--darkBlue);
+}
+
+.border-darkPurple {
+  background-color: var(--white);
+  color: var(--darkPurple);
+  border: 3px solid var(--darkPurple);
+}
+
 .product_display {
   width: 100%;
   height: 90vh;
@@ -54,12 +66,12 @@
 
 /* Right */
 .product_card-right {
-  flex-basis: 45%;
+  flex-basis: 100%;
+  margin: 0 20px;
 }
 
 .product_img {
   width: 90%;
-  margin-left: 20px;
 }
 
 /* Left */
@@ -99,4 +111,36 @@
 
 hr {
   margin-top: 10px;
+}
+
+.product_description {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.product_price {
+  margin-top: 120px;
+  color: var(--darkBlue);
+}
+
+.btn_container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.btn {
+  width: 250px;
+  height: 42px;
+  background-color: var(--darkBlue);
+  border: none;
+  font-size: 20px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  color: var(--darkBlue);
+  border: 3px solid var(--darkBlue);
 }

@@ -41,7 +41,41 @@
           </div>
           <hr />
 
-          <p>{{ product?.data?.description }}</p>
+          <p class="product_description">{{ product?.data?.description }}</p>
+
+          <hr />
+          <h2
+            class="product_price"
+            :class="
+              product?.data?.category === 'men\'s clothing' ? 'color-darkBlue' : 'color-darkPurple'
+            "
+          >
+            ${{ product?.data?.price }}
+          </h2>
+
+          <div class="btn_container">
+            <button
+              class="btn"
+              :class="
+                product?.data?.category === 'men\'s clothing'
+                  ? 'color-darkBlue'
+                  : 'color-darkPurple'
+              "
+            >
+              Buy Now
+            </button>
+            <button
+              @click="singleProduct()"
+              class="btn btn-outline"
+              :class="
+                product?.data?.category === 'men\'s clothing'
+                  ? 'border-darkBlue'
+                  : 'border-darkPurple'
+              "
+            >
+              Next Product
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -84,7 +118,6 @@ export default {
       }
 
       const data = await this.API()
-      console.log(data)
       if (data.category === "men's clothing" || data.category === "women's clothing") {
         this.product = { data }
         this.isProductAvailable = true
