@@ -139,6 +139,18 @@ hr {
  background-color: var(--darkPurple);
 }
 
+.bg-gray {
+ background: linear-gradient(to bottom, var(--gray) 50%, var(--white) 30%);
+}
+
+.bg-brightBlue {
+ background: linear-gradient(to bottom, var(--brightBlue) 50%, var(--white) 30%);
+}
+
+.bg-palePurple {
+ background: linear-gradient(to bottom, var(--palePurple) 50%, var(--white) 30%);
+}
+
 .color-darkBlue {
  color: var(--darkBlue);
 }
@@ -165,16 +177,4 @@ hr {
  background-color: var(--white);
  color: var(--darkPurple);
  border: 3px solid var(--darkPurple);
-}
-
-.bg-gray {
- background: linear-gradient(to bottom, var(--gray) 50%, var(--white) 30%);
-}
-
-.bg-brightBlue {
- background: linear-gradient(to bottom, var(--brightBlue) 50%, var(--white) 30%);
-}
-
-.bg-palePurple {
- background: linear-gradient(to bottom, var(--palePurple) 50%, var(--white) 30%);
 }
