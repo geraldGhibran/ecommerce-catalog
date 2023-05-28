@@ -139,7 +139,7 @@ export default {
     async singleProduct() {
       this.loading = true
 
-      if (this.index <= 20) {
+      if (this.index !== 20) {
         this.index++
       } else {
         this.index = 1
