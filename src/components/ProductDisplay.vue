@@ -27,13 +27,13 @@
         class="product_card-avaible"
         :class="!isProductAvailable ? 'display-none' : 'product_card-avaible'"
       >
-        <!-- Right -->
-        <div class="product_card-right">
+        <!-- left -->
+        <div class="product_card-left">
           <img :src="product?.data?.image" class="product_img" />
         </div>
 
-        <!-- Left -->
-        <div class="product_card-left">
+        <!-- right -->
+        <div class="product_card-right">
           <h1
             class="product_title"
             :class="
