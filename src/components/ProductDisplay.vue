@@ -1,5 +1,10 @@
 <template>
-  <div class="product_display"></div>
+  <div class="product_display">
+
+    <div class="product_card">
+        
+    </div>
+  </div>
 </template>
 
 <script>

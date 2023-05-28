@@ -3,5 +3,7 @@ import ProductDisplay from './components/ProductDisplay.vue'
 </script>
 
 <template>
-  <ProductDisplay />
+  <section>
+    <ProductDisplay />
+  </section>
 </template>
