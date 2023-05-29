@@ -4,7 +4,7 @@
     :class="
       !isProductAvailable
         ? 'bg-gray'
-        : product.data.category === 'men\'s clothing'
+        : products.data.category === 'men\'s clothing'
         ? 'bg-brightBlue'
         : 'bg-palePurple'
     "
@@ -29,7 +29,7 @@
       >
         <!-- left -->
         <div class="product_card-left">
-          <img :src="product?.data?.image" class="product_img" />
+          <img :src="products?.data?.image" class="product_img" />
         </div>
 
         <!-- right -->
@@ -37,23 +37,23 @@
           <h1
             class="product_title"
             :class="
-              product?.data?.category === 'men\'s clothing' ? 'color-darkBlue' : 'color-darkPurple'
+              products?.data?.category === 'men\'s clothing' ? 'color-darkBlue' : 'color-darkPurple'
             "
           >
-            {{ product?.data?.title }}
+            {{ products?.data?.title }}
           </h1>
 
           <div class="product_information">
-            <p class="product_category">{{ product?.data?.category }}</p>
+            <p class="product_category">{{ products?.data?.category }}</p>
             <div class="product_rating">
-              <p class="product_rating_rate">{{ product?.data?.rating?.rate }} / 5</p>
+              <p class="product_rating_rate">{{ products?.data?.rating?.rate }} / 5</p>
               <div class="product_rating_circle">
                 <div
                   v-for="maxRate in maxRates"
                   :key="maxRate"
                   class="circle"
                   :class="
-                    product?.data?.category === 'men\'s clothing' ? 'bg-darkBlue' : 'bg-darkPurple'
+                    products?.data?.category === 'men\'s clothing' ? 'bg-darkBlue' : 'bg-darkPurple'
                   "
                 ></div>
               </div>
@@ -61,23 +61,23 @@
           </div>
           <hr />
 
-          <p class="product_description">{{ product?.data?.description }}</p>
+          <p class="product_description">{{ products?.data?.description }}</p>
 
           <hr />
           <h2
             class="product_price"
             :class="
-              product?.data?.category === 'men\'s clothing' ? 'color-darkBlue' : 'color-darkPurple'
+              products?.data?.category === 'men\'s clothing' ? 'color-darkBlue' : 'color-darkPurple'
             "
           >
-            ${{ product?.data?.price }}
+            ${{ products?.data?.price }}
           </h2>
 
           <div class="btn_container">
             <button
               class="btn"
               :class="
-                product?.data?.category === 'men\'s clothing'
+                products?.data?.category === 'men\'s clothing'
                   ? 'font-white bg-darkBlue'
                   : 'font-white bg-darkPurple'
               "
@@ -88,7 +88,7 @@
               @click="singleProduct()"
               class="btn btn-outline"
               :class="
-                product?.data?.category === 'men\'s clothing'
+                products?.data?.category === 'men\'s clothing'
                   ? 'border-darkBlue'
                   : 'border-darkPurple'
               "
@@ -114,7 +114,7 @@ export default {
   data() {
     return {
       index: 0,
-      product: {},
+      products: {},
       maxRates: [1, 2, 3, 4, 5],
       loading: false,
       isProductAvailable: false
@@ -147,7 +147,7 @@ export default {
 
       const data = await this.API()
       if (data.category === "men's clothing" || data.category === "women's clothing") {
-        this.product = { data }
+        this.products = { data }
         this.isProductAvailable = true
       } else {
         this.isProductAvailable = false
