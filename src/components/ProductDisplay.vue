@@ -15,16 +15,16 @@
     <div class="product_card">
       <!-- No Avaible -->
       <div
-        class="product_cart-no-avaible"
+        class="product_cart-no-available"
         :class="isProductAvailable ? 'display-none' : 'product_cart-no-avaible'"
       >
         <p class="text-no">This product is unavailable to show</p>
-        <button class="btn_no-avaible" @click="singleProduct()">Next product</button>
+        <button class="btn_no-available" @click="singleProduct()">Next product</button>
       </div>
 
-      <!-- Avaible -->
+      <!-- Available -->
       <div
-        class="product_card-avaible"
+        class="product_card-available"
         :class="!isProductAvailable ? 'display-none' : 'product_card-avaible'"
       >
         <!-- left -->
