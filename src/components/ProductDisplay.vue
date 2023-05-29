@@ -124,7 +124,7 @@ export default {
   methods: {
     async API() {
       try {
-        const url = 'https://fakestoreapi.com/products/ ' + this.index
+        const url = `https://fakestoreapi.com/products/${this.index}`
         const response = await fetch(url)
         if (!response.ok) {
           throw new Error('Request Failed')
