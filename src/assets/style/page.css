@@ -104,6 +104,7 @@
 
 .product_title {
   color: var(--darkBlue);
+  font-size: 28px;
 }
 
 .product_information {
