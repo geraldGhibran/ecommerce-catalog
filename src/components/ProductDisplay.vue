@@ -63,38 +63,42 @@
 
           <p class="product_description">{{ products?.data?.description }}</p>
 
-          <hr />
-          <h2
-            class="product_price"
-            :class="
-              products?.data?.category === 'men\'s clothing' ? 'color-darkBlue' : 'color-darkPurple'
-            "
-          >
-            ${{ products?.data?.price }}
-          </h2>
+          <div class="down">
+            <hr />
+            <h2
+              class="product_price"
+              :class="
+                products?.data?.category === 'men\'s clothing'
+                  ? 'color-darkBlue'
+                  : 'color-darkPurple'
+              "
+            >
+              ${{ products?.data?.price }}
+            </h2>
 
-          <div class="btn_container">
-            <button
-              class="btn"
-              :class="
-                products?.data?.category === 'men\'s clothing'
-                  ? 'font-white bg-darkBlue'
-                  : 'font-white bg-darkPurple'
-              "
-            >
-              Buy Now
-            </button>
-            <button
-              @click="singleProduct()"
-              class="btn btn-outline"
-              :class="
-                products?.data?.category === 'men\'s clothing'
-                  ? 'border-darkBlue'
-                  : 'border-darkPurple'
-              "
-            >
-              Next Product
-            </button>
+            <div class="btn_container">
+              <button
+                class="btn"
+                :class="
+                  products?.data?.category === 'men\'s clothing'
+                    ? 'font-white bg-darkBlue'
+                    : 'font-white bg-darkPurple'
+                "
+              >
+                Buy Now
+              </button>
+              <button
+                @click="singleProduct()"
+                class="btn btn-outline"
+                :class="
+                  products?.data?.category === 'men\'s clothing'
+                    ? 'border-darkBlue'
+                    : 'border-darkPurple'
+                "
+              >
+                Next Product
+              </button>
+            </div>
           </div>
         </div>
       </div>

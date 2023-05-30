@@ -77,12 +77,13 @@
   cursor: pointer;
 }
 
-/* Avaible */
+/* Available */
 .product_card-available {
   margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 /* Right */
@@ -98,6 +99,7 @@
 /* Left */
 .product_card-right {
   margin: 0 20px;
+  height: 80vh;
 }
 
 .product_title {
@@ -136,11 +138,10 @@
 }
 
 hr {
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 .product_price {
-  margin-top: 120px;
   color: var(--darkBlue);
 }
 
@@ -156,6 +157,11 @@ hr {
   border: none;
   font-size: 20px;
   cursor: pointer;
+}
+
+.down {
+  position: absolute;
+  bottom: 0;
 }
 
 .btn-outline {
