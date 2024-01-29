@@ -1,4 +1,4 @@
-# e-commerce-catalog
+# ecommerce-catalog
 
 ## Project Setup
 
