@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --darkBlue: #002772;
@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .border-darkPurple {
@@ -24,7 +24,7 @@
   border: 3px solid var(--darkPurple);
 }
 
-.product_display {
+.product-display {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -33,7 +33,7 @@
   position: relative;
 }
 
-.product_card {
+.product-card {
   max-width: 1134px;
   max-height: 680px;
   min-width: 1134px;
@@ -45,7 +45,7 @@
 }
 
 /* No available */
-.product_cart-no-available {
+.product-cart-no-available {
   width: 100%;
   height: 100vh;
   background-image: url(../sad-face.png);
@@ -78,7 +78,7 @@
 }
 
 /* Available */
-.product_card-available {
+.product-card-available {
   margin-top: 40px;
   display: flex;
   align-items: center;
@@ -87,47 +87,47 @@
 }
 
 /* Right */
-.product_card-left {
+.product-card-left {
   margin: 0 20px;
 }
 
-.product_img {
+.product-img {
   width: 320px;
   height: 383px;
 }
 
 /* Left */
-.product_card-right {
+.product-card-right {
   margin: 0 20px;
   height: 80vh;
 }
 
-.product_title {
+.product-title {
   color: var(--darkBlue);
   font-size: 28px;
 }
 
-.product_information {
+.product-information {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }
 
-.product_rating {
+.product-rating {
   float: right;
   display: flex;
 }
 
-.product_rating_rate {
+.product-rating_rate {
   margin-right: 5px;
 }
 
-.product_rating_circle {
+.product-rating_circle {
   display: flex;
   gap: 2px;
 }
 
-.product_description {
+.product-description {
   font-size: 20px;
   margin-top: 10px;
 }
@@ -142,7 +142,7 @@ hr {
   margin: 10px 0;
 }
 
-.product_price {
+.product-price {
   color: var(--darkBlue);
 }
 
@@ -186,11 +186,17 @@ hr {
 }
 
 .bg-brightBlue {
-  background: linear-gradient(to bottom, var(--brightBlue) 50%, var(--white) 30%);
+  background: url("../bg-pattern.png"),
+    linear-gradient(to bottom, var(--brightBlue) 50%, var(--white) 50%);
+  background-repeat: repeat-x;
+  background-size: 50%;
 }
 
 .bg-palePurple {
-  background: linear-gradient(to bottom, var(--palePurple) 50%, var(--white) 30%);
+  background: url("../bg-pattern.png"),
+    linear-gradient(to bottom, var(--palePurple) 50%, var(--white) 50%);
+  background-repeat: repeat-x;
+  background-size: 50%;
 }
 
 .color-darkBlue {

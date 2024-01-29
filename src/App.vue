@@ -1,9 +1,9 @@
 <script setup>
-import ProductDisplay from './components/ProductDisplay.vue'
+import ProductDetail from './components/ProductDetail.vue'
 </script>
 
 <template>
   <section>
-    <ProductDisplay />
+    <ProductDetail />
   </section>
 </template>
